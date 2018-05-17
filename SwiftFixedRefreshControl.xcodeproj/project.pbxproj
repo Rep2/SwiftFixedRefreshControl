@@ -16,6 +16,10 @@
 		F60227EE20ADCDF0000C3F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60227EC20ADCDF0000C3F57 /* Main.storyboard */; };
 		F60227F020ADCDF2000C3F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60227EF20ADCDF2000C3F57 /* Assets.xcassets */; };
 		F60227F320ADCDF2000C3F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60227F120ADCDF2000C3F57 /* LaunchScreen.storyboard */; };
+		F602280720ADD009000C3F57 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602280620ADD009000C3F57 /* SelectionViewController.swift */; };
+		F602280D20ADD15B000C3F57 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F602280A20ADD15B000C3F57 /* SnapKit.framework */; };
+		F602280E20ADD15B000C3F57 /* SwiftViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F602280B20ADD15B000C3F57 /* SwiftViewModels.framework */; };
+		F602280F20ADD15B000C3F57 /* SwiftGenericCells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F602280C20ADD15B000C3F57 /* SwiftGenericCells.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		F60227F420ADCDF2000C3F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F60227F920ADCDF2000C3F57 /* SwiftFixedRefreshControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFixedRefreshControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60227FF20ADCDF2000C3F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F602280620ADD009000C3F57 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		F602280A20ADD15B000C3F57 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		F602280B20ADD15B000C3F57 /* SwiftViewModels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftViewModels.framework; path = Carthage/Build/iOS/SwiftViewModels.framework; sourceTree = "<group>"; };
+		F602280C20ADD15B000C3F57 /* SwiftGenericCells.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGenericCells.framework; path = Carthage/Build/iOS/SwiftGenericCells.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F602280D20ADD15B000C3F57 /* SnapKit.framework in Frameworks */,
+				F602280E20ADD15B000C3F57 /* SwiftViewModels.framework in Frameworks */,
+				F602280F20ADD15B000C3F57 /* SwiftGenericCells.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +106,7 @@
 				F60227E720ADCDF0000C3F57 /* SwiftFixedRefreshControlDemo */,
 				F60227FC20ADCDF2000C3F57 /* SwiftFixedRefreshControlDemoTests */,
 				F60227C420ADCD15000C3F57 /* Products */,
+				F602280920ADD15B000C3F57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +149,7 @@
 				F60227EF20ADCDF2000C3F57 /* Assets.xcassets */,
 				F60227F120ADCDF2000C3F57 /* LaunchScreen.storyboard */,
 				F60227F420ADCDF2000C3F57 /* Info.plist */,
+				F602280620ADD009000C3F57 /* SelectionViewController.swift */,
 			);
 			path = SwiftFixedRefreshControlDemo;
 			sourceTree = "<group>";
@@ -147,6 +160,16 @@
 				F60227FF20ADCDF2000C3F57 /* Info.plist */,
 			);
 			path = SwiftFixedRefreshControlDemoTests;
+			sourceTree = "<group>";
+		};
+		F602280920ADD15B000C3F57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F602280A20ADD15B000C3F57 /* SnapKit.framework */,
+				F602280C20ADD15B000C3F57 /* SwiftGenericCells.framework */,
+				F602280B20ADD15B000C3F57 /* SwiftViewModels.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				F60227E220ADCDF0000C3F57 /* Sources */,
 				F60227E320ADCDF0000C3F57 /* Frameworks */,
 				F60227E420ADCDF0000C3F57 /* Resources */,
+				F602280820ADD0C2000C3F57 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -331,6 +355,28 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		F602280820ADD0C2000C3F57 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftViewModels.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftGenericCells.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReusableDataSource.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftViewModels.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftGenericCells.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReusableDataSource.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -355,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F60227EB20ADCDF0000C3F57 /* InterfaceRefreshControlTableViewController.swift in Sources */,
+				F602280720ADD009000C3F57 /* SelectionViewController.swift in Sources */,
 				F60227E920ADCDF0000C3F57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +665,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftFixedRefreshControlDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,6 +687,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftFixedRefreshControlDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
