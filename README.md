@@ -44,3 +44,5 @@ Refresh control stops animating on screen transition or foreground exit/enter ev
 
 To fix this recreate refresh control on ```viewWillAppear``` when needed.
 
+Check out the demo for more info.
+
