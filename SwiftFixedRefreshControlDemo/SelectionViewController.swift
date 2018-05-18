@@ -4,36 +4,6 @@ import ReusableDataSource
 import UIKit
 
 class SelectionViewController: UITableViewController {
-    enum RefreshControlType: CustomStringConvertible {
-        case interfaceBuilder
-        case interfaceBuilderManual
-
-        static var all: [RefreshControlType] {
-            return [
-                .interfaceBuilder,
-                .interfaceBuilderManual
-            ]
-        }
-
-        var description: String {
-            switch self {
-            case .interfaceBuilder:
-                return "Interface builder"
-            case .interfaceBuilderManual:
-                return "Interface builder manually triggered"
-            }
-        }
-
-        var viewController: UIViewController {
-            switch self {
-            case .interfaceBuilder:
-                return UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "InterfaceRefreshControlVC")
-            case .interfaceBuilderManual:
-                return UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "InterfaceRefreshControlVC")
-            }
-        }
-    }
-
     let dataSource = ReusableTableViewDataSource()
 
     override func viewDidLoad() {

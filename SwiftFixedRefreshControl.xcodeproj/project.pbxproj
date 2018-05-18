@@ -12,7 +12,7 @@
 		F60227DF20ADCD81000C3F57 /* ViewControllerWithRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60227DE20ADCD81000C3F57 /* ViewControllerWithRefreshControl.swift */; };
 		F60227E120ADCD99000C3F57 /* TableViewWithRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60227E020ADCD99000C3F57 /* TableViewWithRefreshControl.swift */; };
 		F60227E920ADCDF0000C3F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60227E820ADCDF0000C3F57 /* AppDelegate.swift */; };
-		F60227EB20ADCDF0000C3F57 /* InterfaceRefreshControlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60227EA20ADCDF0000C3F57 /* InterfaceRefreshControlTableViewController.swift */; };
+		F60227EB20ADCDF0000C3F57 /* InterfaceBuilderProgramaticallyTriggeredVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60227EA20ADCDF0000C3F57 /* InterfaceBuilderProgramaticallyTriggeredVC.swift */; };
 		F60227EE20ADCDF0000C3F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60227EC20ADCDF0000C3F57 /* Main.storyboard */; };
 		F60227F020ADCDF2000C3F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60227EF20ADCDF2000C3F57 /* Assets.xcassets */; };
 		F60227F320ADCDF2000C3F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60227F120ADCDF2000C3F57 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,10 @@
 		F602280D20ADD15B000C3F57 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F602280A20ADD15B000C3F57 /* SnapKit.framework */; };
 		F602280E20ADD15B000C3F57 /* SwiftViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F602280B20ADD15B000C3F57 /* SwiftViewModels.framework */; };
 		F602280F20ADD15B000C3F57 /* SwiftGenericCells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F602280C20ADD15B000C3F57 /* SwiftGenericCells.framework */; };
+		F602281120ADD62F000C3F57 /* RefreshControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602281020ADD62F000C3F57 /* RefreshControlType.swift */; };
+		F63F037B20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F037A20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift */; };
+		F63F037E20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F037D20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift */; };
+		F63F038020AEFE4D00F95D1F /* Fix1Attempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F037F20AEFE4D00F95D1F /* Fix1Attempt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +53,7 @@
 		F60227E020ADCD99000C3F57 /* TableViewWithRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWithRefreshControl.swift; sourceTree = "<group>"; };
 		F60227E620ADCDF0000C3F57 /* SwiftFixedRefreshControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFixedRefreshControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60227E820ADCDF0000C3F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F60227EA20ADCDF0000C3F57 /* InterfaceRefreshControlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceRefreshControlTableViewController.swift; sourceTree = "<group>"; };
+		F60227EA20ADCDF0000C3F57 /* InterfaceBuilderProgramaticallyTriggeredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceBuilderProgramaticallyTriggeredVC.swift; sourceTree = "<group>"; };
 		F60227ED20ADCDF0000C3F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F60227EF20ADCDF2000C3F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F60227F220ADCDF2000C3F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +64,10 @@
 		F602280A20ADD15B000C3F57 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		F602280B20ADD15B000C3F57 /* SwiftViewModels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftViewModels.framework; path = Carthage/Build/iOS/SwiftViewModels.framework; sourceTree = "<group>"; };
 		F602280C20ADD15B000C3F57 /* SwiftGenericCells.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGenericCells.framework; path = Carthage/Build/iOS/SwiftGenericCells.framework; sourceTree = "<group>"; };
+		F602281020ADD62F000C3F57 /* RefreshControlType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshControlType.swift; sourceTree = "<group>"; };
+		F63F037A20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticProgramaticallyTriggeredVC.swift; sourceTree = "<group>"; };
+		F63F037D20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedProgramaticRefreshVC.swift; sourceTree = "<group>"; };
+		F63F037F20AEFE4D00F95D1F /* Fix1Attempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fix1Attempt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,13 +151,14 @@
 		F60227E720ADCDF0000C3F57 /* SwiftFixedRefreshControlDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F63F037720AEE74200F95D1F /* ViewController */,
 				F60227E820ADCDF0000C3F57 /* AppDelegate.swift */,
-				F60227EA20ADCDF0000C3F57 /* InterfaceRefreshControlTableViewController.swift */,
 				F60227EC20ADCDF0000C3F57 /* Main.storyboard */,
 				F60227EF20ADCDF2000C3F57 /* Assets.xcassets */,
 				F60227F120ADCDF2000C3F57 /* LaunchScreen.storyboard */,
 				F60227F420ADCDF2000C3F57 /* Info.plist */,
 				F602280620ADD009000C3F57 /* SelectionViewController.swift */,
+				F602281020ADD62F000C3F57 /* RefreshControlType.swift */,
 			);
 			path = SwiftFixedRefreshControlDemo;
 			sourceTree = "<group>";
@@ -170,6 +179,17 @@
 				F602280B20ADD15B000C3F57 /* SwiftViewModels.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F63F037720AEE74200F95D1F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F60227EA20ADCDF0000C3F57 /* InterfaceBuilderProgramaticallyTriggeredVC.swift */,
+				F63F037A20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift */,
+				F63F037F20AEFE4D00F95D1F /* Fix1Attempt.swift */,
+				F63F037D20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,7 +420,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F60227EB20ADCDF0000C3F57 /* InterfaceRefreshControlTableViewController.swift in Sources */,
+				F60227EB20ADCDF0000C3F57 /* InterfaceBuilderProgramaticallyTriggeredVC.swift in Sources */,
+				F63F038020AEFE4D00F95D1F /* Fix1Attempt.swift in Sources */,
+				F63F037E20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift in Sources */,
+				F63F037B20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift in Sources */,
+				F602281120ADD62F000C3F57 /* RefreshControlType.swift in Sources */,
 				F602280720ADD009000C3F57 /* SelectionViewController.swift in Sources */,
 				F60227E920ADCDF0000C3F57 /* AppDelegate.swift in Sources */,
 			);
