@@ -27,7 +27,7 @@ enum RefreshControlType: CustomStringConvertible {
     var viewController: UIViewController {
         switch self {
         case .interfaceBuilder:
-            return UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "InterfaceBuilderRefreshVC")
+            return UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "InterfaceBuilderRefreshVC")
         case .programatic:
             return ProgramaticRefreshVC(style: .grouped)
         case .fixed:

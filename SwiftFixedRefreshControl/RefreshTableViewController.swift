@@ -17,11 +17,22 @@ open class RefreshTableViewController: UITableViewController {
         super.viewDidLoad()
 
         refreshControl = refreshControlInstance
+
+        NotificationCenter.default.addObserver(self, selector: #selector(RefreshTableViewController.applicationWillEnterForeground), name: .UIApplicationWillEnterForeground, object: nil)
     }
 
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        restartRefreshControl()
+    }
+
+    @objc
+    private func applicationWillEnterForeground() {
+        restartRefreshControl()
+    }
+
+    func restartRefreshControl() {
         if isLoading {
             refreshControl = refreshControlInstance
             refreshControl?.beginRefreshing()
