@@ -1,18 +1,34 @@
+import SwiftFixedRefreshControl
+import SwiftViewModels
+import SwiftGenericCells
+import ReusableDataSource
 import UIKit
 
-class FixedProgramaticRefreshVC: SelectionViewController {
-    override func viewDidLoad() {
+class FixedProgramaticRefreshVC: RefreshTableViewController {
+    let dataSource = ReusableTableViewDataSource()
+
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = RefreshControlType.programatic.description
+        title = "Type selection"
 
-        refreshControl = UIRefreshControl()
-        refreshControl?.isOpaque = false
+        tableView.dataSource = dataSource
 
-        tableView.refreshControl?.beginRefreshing()
+        let types = RefreshControlType.all
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.tableView.refreshControl?.endRefreshing()
-        }
+        dataSource.present(
+            presentableViewModels: types.map {
+                ReusableViewModel<TitleTableViewCell>(
+                    viewModel: TitleTableViewCellViewModel(
+                        titleViewModel: TextViewModel(text: String(describing: $0))
+                    )
+                    ).anyPresentable
+            },
+            on: tableView
+        )
+    }
+
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(RefreshControlType.all[indexPath.row].viewController, animated: true)
     }
 }

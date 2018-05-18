@@ -3,10 +3,10 @@ import SwiftGenericCells
 import ReusableDataSource
 import UIKit
 
-class SelectionViewController: UITableViewController {
+public class SelectionViewController: UITableViewController {
     let dataSource = ReusableTableViewDataSource()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Type selection"
@@ -27,7 +27,7 @@ class SelectionViewController: UITableViewController {
         )
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(RefreshControlType.all[indexPath.row].viewController, animated: true)
     }
 }
