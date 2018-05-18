@@ -28,6 +28,10 @@ class FixedProgramaticRefreshVC: RefreshTableViewController {
         )
     }
 
+    override func refreshControlValueChanged() {
+        super.refreshControlValueChanged()
+    }
+
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(RefreshControlType.all[indexPath.row].viewController, animated: true)
     }

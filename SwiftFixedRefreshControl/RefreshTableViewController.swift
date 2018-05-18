@@ -37,7 +37,7 @@ open class RefreshTableViewController: UITableViewController {
     }
 
     @objc
-    func refreshControlValueChanged() {
+    open func refreshControlValueChanged() {
         isLoading = true
     }
 }
