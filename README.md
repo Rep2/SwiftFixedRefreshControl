@@ -28,6 +28,18 @@ class FixedTableViewController: RefreshTableViewController {
 }
 ```
 
+User interaction can be disabled using ```isUserInteractionEnabled```.
+
+```Swift
+class DisabledUserInteractionVC: RefreshTableViewController {
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+
+        isUserInteractionEnabled = false
+    }
+}
+```
+
 ## Installation
 
 ### Carthage
