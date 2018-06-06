@@ -4,12 +4,14 @@ enum RefreshControlType: CustomStringConvertible {
     case interfaceBuilder
     case programatic
     case fixed
+    case disableUserInteraction
 
     static var all: [RefreshControlType] {
         return [
             .interfaceBuilder,
             .programatic,
-            .fixed
+            .fixed,
+            disableUserInteraction
         ]
     }
 
@@ -21,6 +23,8 @@ enum RefreshControlType: CustomStringConvertible {
             return "Programatic"
         case .fixed:
             return "Fixed"
+        case .disableUserInteraction:
+            return "Disable user interaction"
         }
     }
 
@@ -32,6 +36,8 @@ enum RefreshControlType: CustomStringConvertible {
             return ProgramaticRefreshVC(style: .grouped)
         case .fixed:
             return FixedProgramaticRefreshVC(style: .grouped)
+        case .disableUserInteraction:
+            return DisabledUserInteractionVC(style: .grouped)
         }
     }
   }

@@ -3,6 +3,20 @@ import UIKit
 open class RefreshTableViewController: UITableViewController {
     private var isLoading: Bool = false
 
+    public var isUserInteractionEnabled = true {
+        didSet {
+            if isUserInteractionEnabled {
+                if refreshControl == nil {
+                    refreshControl = refreshControlInstance
+                }
+            } else {
+                if let refreshControl = refreshControl, !refreshControl.isRefreshing {
+                    self.refreshControl = nil
+                }
+            }
+        }
+    }
+
     public func beginRefreshing() {
         refreshControl?.beginRefreshing()
         isLoading = true
@@ -11,6 +25,10 @@ open class RefreshTableViewController: UITableViewController {
     public func endRefreshing() {
         refreshControl?.endRefreshing()
         isLoading = false
+
+        if !isUserInteractionEnabled {
+            refreshControl = nil
+        }
     }
 
     open override func viewDidLoad() {

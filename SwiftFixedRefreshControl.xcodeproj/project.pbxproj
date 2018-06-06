@@ -24,6 +24,7 @@
 		F63F037E20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63F037D20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift */; };
 		F658CF7920AF329000D21B46 /* SwiftFixedRefreshControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60227C320ADCD15000C3F57 /* SwiftFixedRefreshControl.framework */; };
 		F658CF7A20AF329000D21B46 /* SwiftFixedRefreshControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F60227C320ADCD15000C3F57 /* SwiftFixedRefreshControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6F9D5B020C8346200C642A6 /* DisabledUserInteractionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9D5AF20C8346200C642A6 /* DisabledUserInteractionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		F602281020ADD62F000C3F57 /* RefreshControlType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshControlType.swift; sourceTree = "<group>"; };
 		F63F037A20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticProgramaticallyTriggeredVC.swift; sourceTree = "<group>"; };
 		F63F037D20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedProgramaticRefreshVC.swift; sourceTree = "<group>"; };
+		F6F9D5AF20C8346200C642A6 /* DisabledUserInteractionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledUserInteractionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				F60227EA20ADCDF0000C3F57 /* InterfaceBuilderProgramaticallyTriggeredVC.swift */,
 				F63F037A20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift */,
 				F63F037D20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift */,
+				F6F9D5AF20C8346200C642A6 /* DisabledUserInteractionVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F9D5B020C8346200C642A6 /* DisabledUserInteractionVC.swift in Sources */,
 				F60227EB20ADCDF0000C3F57 /* InterfaceBuilderProgramaticallyTriggeredVC.swift in Sources */,
 				F63F037E20AEFDF200F95D1F /* FixedProgramaticRefreshVC.swift in Sources */,
 				F63F037B20AEE87100F95D1F /* ProgramaticProgramaticallyTriggeredVC.swift in Sources */,
