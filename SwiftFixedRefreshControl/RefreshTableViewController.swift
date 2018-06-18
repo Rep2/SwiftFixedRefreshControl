@@ -18,7 +18,7 @@ open class RefreshTableViewController: UITableViewController {
     }
 
     public func beginRefreshing() {
-        if isUserInteractionEnabled, refreshControl == nil {
+        if refreshControl == nil {
             refreshControl = refreshControlInstance
         }
 
