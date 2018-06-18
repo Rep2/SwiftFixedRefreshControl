@@ -18,6 +18,10 @@ open class RefreshTableViewController: UITableViewController {
     }
 
     public func beginRefreshing() {
+        if isUserInteractionEnabled, refreshControl == nil {
+            refreshControl = refreshControlInstance
+        }
+
         refreshControl?.beginRefreshing()
         isLoading = true
     }
