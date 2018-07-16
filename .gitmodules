@@ -1,0 +1,12 @@
+[submodule "Carthage/Checkouts/ReusableDataSource"]
+	path = Carthage/Checkouts/ReusableDataSource
+	url = https://github.com/Rep2/ReusableDataSource.git
+[submodule "Carthage/Checkouts/SnapKit"]
+	path = Carthage/Checkouts/SnapKit
+	url = https://github.com/SnapKit/SnapKit.git
+[submodule "Carthage/Checkouts/SwiftViewModels"]
+	path = Carthage/Checkouts/SwiftViewModels
+	url = https://github.com/Rep2/SwiftViewModels.git
+[submodule "Carthage/Checkouts/SwiftGenericCells"]
+	path = Carthage/Checkouts/SwiftGenericCells
+	url = https://github.com/Rep2/SwiftGenericCells.git
