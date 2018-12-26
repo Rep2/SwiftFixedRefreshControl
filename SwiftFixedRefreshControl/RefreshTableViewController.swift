@@ -40,7 +40,7 @@ open class RefreshTableViewController: UITableViewController {
 
         refreshControl = refreshControlInstance
 
-        NotificationCenter.default.addObserver(self, selector: #selector(RefreshTableViewController.applicationWillEnterForeground), name: .UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
     open override func viewWillAppear(_ animated: Bool) {
@@ -49,12 +49,7 @@ open class RefreshTableViewController: UITableViewController {
         restartRefreshControl()
     }
 
-    @objc
-    private func applicationWillEnterForeground() {
-        restartRefreshControl()
-    }
-
-    func restartRefreshControl() {
+    private func restartRefreshControl() {
         if isLoading {
             refreshControl = refreshControlInstance
             refreshControl?.beginRefreshing()
@@ -64,7 +59,7 @@ open class RefreshTableViewController: UITableViewController {
     private var refreshControlInstance: UIRefreshControl {
         let refreshControl = UIRefreshControl()
 
-        refreshControl.addTarget(self, action: #selector(RefreshTableViewController.refreshControlValueChanged), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(refreshControlValueChanged), for: .valueChanged)
 
         return refreshControl
     }
@@ -72,5 +67,10 @@ open class RefreshTableViewController: UITableViewController {
     @objc
     open func refreshControlValueChanged() {
         isLoading = true
+    }
+
+    @objc
+    private func applicationWillEnterForeground() {
+        restartRefreshControl()
     }
 }

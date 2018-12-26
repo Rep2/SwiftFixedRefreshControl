@@ -314,13 +314,14 @@
 				TargetAttributes = {
 					F60227C220ADCD15000C3F57 = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1010;
 					};
 					F60227CB20ADCD15000C3F57 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 					F60227E520ADCDF0000C3F57 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1010;
 					};
 					F60227F820ADCDF2000C3F57 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -642,7 +643,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -669,7 +670,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rep.SwiftFixedRefreshControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -730,7 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rep.SwiftFixedRefreshControlDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -753,7 +754,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rep.SwiftFixedRefreshControlDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
