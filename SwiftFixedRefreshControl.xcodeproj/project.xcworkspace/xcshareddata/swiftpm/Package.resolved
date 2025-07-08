@@ -1,0 +1,15 @@
+{
+  "originHash" : "a3bfc3baa304266cfca0f1c7b2d9e25f26e732c30bb16030a869072ecb55b714",
+  "pins" : [
+    {
+      "identity" : "swiftviewmodels",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:Rep2/SwiftViewModels.git",
+      "state" : {
+        "revision" : "9da335d06e459b2082bd4b269bbd978823cf2209",
+        "version" : "0.6.0"
+      }
+    }
+  ],
+  "version" : 3
+}
